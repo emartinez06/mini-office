@@ -8,6 +8,9 @@ import helmet from "helmet";
 import http from 'http';
 dotenv.config();
 
+// Import routes
+import * as doc from './routes/docs';
+
 /**
  * App Variables
  */
@@ -20,12 +23,10 @@ const app = express();
 app.use(helmet());
 app.use(cors());
 app.use(express.json());
+app.use('/docs',doc.getDocument)
 
 /**
  * Server Activation
  */
 const server = http.createServer(app);
-server.listen(port, () => {
-    // tslint:disable-next-line:no-console
-    console.log(`Service running on port ${port}`);
-});
+server.listen(port);
