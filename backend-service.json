@@ -1,0 +1,14 @@
+{
+    "apps": [
+      {
+        "name": "backend",
+        "script": "npm",
+        "args": "--prefix ./backend run dev",
+        "watch":false,
+        "env": {
+          "NODE_ENV": "development",
+          "PORT": "5500"
+        }
+      }
+    ]
+  }

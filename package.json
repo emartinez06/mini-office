@@ -1,0 +1,13 @@
+{
+  "name": "mini-office",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:emartinez06/mini-office.git",
+  "author": "Edwin Martinez",
+  "license": "MIT",
+  "scripts":{
+    "backend":"pm2 start backend-service.json",
+    "app":"pm2 start app-service.json",
+    "start":"npm run app && npm run backend"
+  }
+}

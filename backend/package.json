@@ -9,7 +9,7 @@
     "lint": "tslint -c tslint.json -p tsconfig.json --fix",
     "tsc": "tsc",
     "build": "npm-run-all clean lint tsc",
-    "dev": "nodemon",
+    "dev":"nodemon",
     "start": "node ."
   },
   "dependencies": {

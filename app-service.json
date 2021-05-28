@@ -1,0 +1,14 @@
+{
+    "apps": [
+      {
+        "name": "app",
+        "script": "npm",
+        "args": "--prefix ./app start",
+        "watch":false,
+        "env": {
+          "NODE_ENV": "development",
+          "PORT": "3000"
+        }
+      }
+    ]
+  }
